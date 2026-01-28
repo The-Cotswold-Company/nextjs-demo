@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Introduction
 
-## Getting Started
+This Next.js project provides a starting point for building a blog application.
 
-First, run the development server:
+## Setup
+
+1. Install dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+   npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Start the development server:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+   npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Pair Programming Tasks
 
-## Learn More
+### Task 1: Display Posts List
 
-To learn more about Next.js, take a look at the following resources:
+Fetch and display blog posts on the Posts page (`/posts`).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Resources provided:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `<Post />` component at `src/components/post.tsx`
+- `getAllPosts` API function with mock data at `src/api`
 
-## Deploy on Vercel
+### Task 2: Create Single Post Route
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The `<Post />` component includes a link to individual post pages (`/posts/[postId]`), but the route doesn't exist yet. Your task is to set up the dynamic routing in Next.js to display a single post when users click these links.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Resources provided:**
+
+- `getPostById` API function at `src/api`

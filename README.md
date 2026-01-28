@@ -25,7 +25,7 @@ Fetch and display blog posts on the Posts page (`/posts`).
 **Resources provided:**
 
 - `<Post />` component at `src/components/post.tsx`
-- `getAllPosts` API function with mock data at `src/api`
+- `https://jsonplaceholder.typicode.com/posts` API endpoint for mock posts data
 
 ### Task 2: Create Single Post Route
 
@@ -33,4 +33,4 @@ The `<Post />` component includes a link to individual post pages (`/posts/[post
 
 **Resources provided:**
 
-- `getPostById` API function at `src/api`
+- `https://jsonplaceholder.typicode.com/posts/[postId]` API endpoint for mock post data

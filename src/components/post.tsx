@@ -1,4 +1,4 @@
-import { type Post } from "@/api/post";
+import { type Post } from "@/types";
 import Link from "next/link";
 
 interface PostProps {
